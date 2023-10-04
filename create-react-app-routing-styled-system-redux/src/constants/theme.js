@@ -3,6 +3,7 @@ const theme = {
     primaryTextColor: 'black',
     primaryBgColor: 'white',
     primaryAccentColor: 'red',
+    secondaryBgColor: 'grey',
   },
   breakpoints: {
     tell: '480px',
@@ -38,6 +39,6 @@ const theme = {
   fontFamily: {
     roboto: "'Roboto', sans-serif",
   },
-};
+}
 
-export default theme;
+export default theme
