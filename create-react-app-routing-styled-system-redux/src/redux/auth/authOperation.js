@@ -30,7 +30,7 @@ export const fetchCurrentUser = createAsyncThunk(
     try {
       await api.fetchCurrentUser()
     } catch (error) {
-      console.log(error.message)
+      console.log('Fetch current =', error.message)
       return thunkAPI.rejectWithValue(error.message)
     }
   }

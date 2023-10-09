@@ -2,14 +2,14 @@ import { Navigate, Outlet } from 'react-router-dom'
 
 import { useAuth } from '../../../hooks'
 
-const PublicRoute = () => {
+const PrivateRoute = () => {
   const isLogin = useAuth()
 
-  if (isLogin) {
-    return <Navigate to="/" />
+  if (!isLogin) {
+    return <Navigate to="/login" />
   }
 
   return <Outlet />
 }
 
-export default PublicRoute
+export default PrivateRoute

@@ -6,7 +6,7 @@ import {
   PublicRoute,
   PrivateRoute,
 } from './Shared'
-import { AuthForm } from './LoginPage'
+import { LoginForm, SocialLogin, RegisterForm } from './LoginPage'
 
 export {
   SharedLayout,
@@ -15,5 +15,7 @@ export {
   AppBar,
   PublicRoute,
   PrivateRoute,
-  AuthForm,
+  LoginForm,
+  SocialLogin,
+  RegisterForm,
 }
