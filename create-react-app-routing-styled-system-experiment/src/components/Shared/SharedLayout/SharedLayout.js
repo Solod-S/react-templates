@@ -9,16 +9,16 @@ import { Box } from '../Box/Box'
 export default function SharedLayout() {
   const [totalHeight, setTotalHeight] = useState('calc(100vh - 20%)') // Изначально установите высоту как 20%
 
-  useEffect(() => {
-    const footerBarHeight = document.querySelector('.footer-bar').clientHeight
-    const appBarHeight = document.querySelector('.header').clientHeight
-    const total = footerBarHeight + appBarHeight + 2
-    setTotalHeight(`calc(100vh - ${total}px)`)
-  }, [])
+  // useEffect(() => {
+  //   const footerBarHeight = document.querySelector('.footer-bar').clientHeight
+  //   const appBarHeight = document.querySelector('.header').clientHeight
+  //   const total = footerBarHeight + appBarHeight + 2
+  //   setTotalHeight(`calc(100vh - ${total}px)`)
+  // }, [])
 
   return (
     <>
-      <AppBar />
+      {/* <AppBar /> */}
       <Suspense
       // fallback={<Loader />}
       >
@@ -26,7 +26,7 @@ export default function SharedLayout() {
           <Outlet />
         </Box>
       </Suspense>
-      <FooterBar />
+      {/* <FooterBar /> */}
     </>
   )
 }
