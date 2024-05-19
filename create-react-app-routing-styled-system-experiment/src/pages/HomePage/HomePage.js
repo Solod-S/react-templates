@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react'
 import styles from './ImageUploadForm.module.css'
 import GooglePickerSheetViewer from './GooglePickerSheetViewer'
 import GoogleUrlSheetViewer from './GoogleUrlSheetViewer'
+import PublicationScheduler from './PublicationScheduler'
 
 const HomePage = () => {
   return (
     <section className="section">
       <div className="container">
         <GooglePickerSheetViewer />
+        <PublicationScheduler />
         {/* <GoogleUrlSheetViewer /> */}
       </div>
     </section>
